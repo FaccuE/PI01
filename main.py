@@ -8,12 +8,12 @@ from sklearn.preprocessing import StandardScaler
 
 app = FastAPI()
 
-df1 = pd.read_csv(r'C:\Users\Faccu E\Downloads\PI01\FastAPI\ETL\steamgames_final.csv')
-df3 = pd.read_csv(r'C:\Users\Faccu E\Downloads\PI01\FastAPI\ETL\user_reviews_final.csv')
-df_1 = pd.read_csv(r'C:\Users\Faccu E\Downloads\PI01\FastAPI\ETL\user_items_final_1.csv')
-df_2 = pd.read_csv(r'C:\Users\Faccu E\Downloads\PI01\FastAPI\ETL\user_items_final_2.csv')
-df_3 = pd.read_csv(r'C:\Users\Faccu E\Downloads\PI01\FastAPI\ETL\user_items_final_3.csv')
-df_4 = pd.read_csv(r'C:\Users\Faccu E\Downloads\PI01\FastAPI\ETL\user_items_final_4.csv')
+df1 = pd.read_csv('steamgames_final.csv')
+df3 = pd.read_csv('user_reviews_final.csv')
+df_1 = pd.read_csv('user_items_final_1.csv')
+df_2 = pd.read_csv('user_items_final_2.csv')
+df_3 = pd.read_csv('user_items_final_3.csv')
+df_4 = pd.read_csv('user_items_final_4.csv')
 df2 = pd.concat([df_1, df_2, df_3, df_4])
 
 
